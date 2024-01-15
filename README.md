@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Photo Gallery 
 
-## Getting Started
+Uma aplicação de galeria de fotos totalmente responsiva desenvolvida com React, Next.js, TypeScript e Tailwind CSS.
+![image](https://github.com/aureliodeboa/Photo-gallery/assets/53971991/3884c623-44dd-42e4-9b3b-e62e605821b1)
 
-First, run the development server:
+
+## Descrição
+
+O **Photo Gallery** é uma aplicação de galeria de fotos que oferece aos usuários uma experiência envolvente para visualizar e navegar por uma coleção de imagens. Utilizando tecnologias modernas, como React para a construção da interface do usuário, Next.js para a renderização do lado do servidor, TypeScript para adicionar tipagem estática e Tailwind CSS para estilização responsiva, este projeto visa proporcionar uma solução eficiente e atraente para compartilhar imagens.
+
+## Funcionalidades Principais
+
+- **Visualização de Imagens:** Os usuários podem explorar imagens em um layout de galeria atraente.
+- **Navegação Intuitiva:** A navegação é simplificada, permitindo que os usuários transitem facilmente entre as imagens.
+- **Responsividade:** A aplicação é completamente responsiva, proporcionando uma experiência de usuário consistente em dispositivos de diferentes tamanhos.
+
+## Pré-requisitos
+
+Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Instale as dependências
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Executando a Aplicação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Acesse [http://localhost:3000](http://localhost:3000) em seu navegador para visualizar a aplicação.
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+A organização da estrutura de diretórios do projeto visa facilitar a manutenção e a expansão.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```plaintext
+|-- src/
+|   |-- app/
+|   |-- components/
+|   |-- data/
+|   |-- types/
+|-- public/
+|   |--assets/
+|      |--images/
+|-- tsconfig.json
+|-- tailwind.config.js
+|-- ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **src/components:** Contém componentes React reutilizáveis.
+- **src/app:** Páginas globais da aplicação construídas com Next.js.
+- **src/data** Dados das imagens.
+- **src/types** Contém os types reutilizáveis.
+- **public:** Armazena arquivos estáticos, como imagens.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
